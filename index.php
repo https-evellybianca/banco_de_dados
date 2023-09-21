@@ -1,20 +1,23 @@
 <?php
 
-//*aqui vamos conectar com o banco de dados*/
+/*aqui vamos conectar 
+com o banco 
+de dados*/
 $servername = "localhost";
-//voce deu nome ao banc de dados 
-$database = "banco2c";
+//você deu nome ao banco de dados
+$database = "func2c";
 $username = "root";
 $password = "";
 
-$conexao = mysqli_conect(
-    $severname, $username<
+$conexao = mysqli_connect(
+    $servername, $username, 
     $password,$database
-
 );
 
-if (!$conn){
-    die("Falha na conexão").mysqli_connect_error());
+if (!$conexao){
+    die("Falha na conexão".mysqli_connect_error());
 }
 echo "conectado com sucesso";
+
+
 ?>
